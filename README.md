@@ -2,7 +2,7 @@
 Convert Windows App Studio app to Xamarin app (Android, iOS, UWP)
 
 *Important*
-This is the first version: the base works (the Xamarin projects), but some features aren't yet supported.
+This is the first version: the base works (the Xamarin projects are generated), but some features aren't yet supported.
 
 The Nuget package is here:
 ```
@@ -17,7 +17,7 @@ It's a convert tool to transform a [Windows App Studio](http://appstudio.windows
 - launch the .sln file (with Visual Studio on Windows)
 - add the nuget "WindowsAppStudio.Convert.Xamarin" (available on nuget.org).
 The Xamarin files are now created!
-- go launch the .Xamarin folder and launch the .Xamarin.sln file 
+- go to the .Xamarin folder and launch the .Xamarin.sln file 
 - restore Nuget packages
 - unload the "...(portable)" project
 - reload the "...(portable)" project
