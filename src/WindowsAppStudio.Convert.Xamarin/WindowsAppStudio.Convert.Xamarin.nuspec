@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>WindowsAppStudio.Convert.Xamarin</id>
+    <version>$version$</version>
+    <title>WindowsAppStudio.Convert.Xamarin</title>
+    <authors>Alchiweb</authors>
+    <owners>Alchiweb</owners>
+    <licenseUrl>https://raw.githubusercontent.com/mugstrasbourg/WindowsAppStudio.Convert.Xamarin/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/mugstrasbourg/WindowsAppStudio.Convert.Xamarin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Convert Windows App Studio app to Xamarin app (Android, iOS, UWP)</description>
+    <copyright>Copyright 2016</copyright>
+    <contentFiles>
+      <files include="**/*" flatten="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="bin/Release/**/*" target="tools" />
+    <file src="Nuget_Init.ps1" target="tools/Init.ps1" />
+  </files>
+</package>

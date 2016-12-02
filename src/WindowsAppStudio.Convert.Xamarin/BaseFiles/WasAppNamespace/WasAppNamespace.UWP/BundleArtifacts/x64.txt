@@ -1,0 +1,2 @@
+MainPackage=Z:\Projects\app-acquaint\WasAppNamespace\WasAppNamespace.UWP\bin\x64\Release\WasAppNamespace.UWP_1.1.0.0_x64.appx
+SymbolPackage=Z:\Projects\app-acquaint\WasAppNamespace\WasAppNamespace.UWP\AppPackages\WasAppNamespace.UWP_1.1.0.0_Test\WasAppNamespace.UWP_1.1.0.0_x64.appxsym

@@ -1,0 +1,414 @@
+{
+  "ZipBaseFile": "BaseFiles.zip",
+  "BaseFiles": [
+    {
+      "Action": "Copy",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Navigation\\AppNavigation.cs"
+    },
+    {
+      "Action": "Copy",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Navigation\\NavInfo.cs"
+    },
+    {
+      "Action": "Copy",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Sections\\_ActionConfig.cs"
+    },
+    {
+      "Action": "Copy",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Services\\DataLoader.cs"
+    },
+    {
+      "Action": "Copy",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\DetailViewModel.cs"
+    },
+    {
+      "Action": "Copy",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\ItemViewModel.cs"
+    },
+    {
+      "Action": "Copy",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\ListViewModel.cs"
+    },
+    {
+      "Action": "Copy",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\ListViewModelBase.cs"
+    },
+    {
+      "Action": "Copy",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\PageViewModelBase.cs"
+    },
+    {
+      "Action": "Copy",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\ViewModelFactory.cs"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Package.appxmanifest",
+      "NewName": "WasAppNamespace\\WasAppNamespace.UWP\\Package.appxmanifest",
+      "DeleteSourceFile": true
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\project.json",
+      "NewName": "WasAppNamespace\\WasAppNamespace\\project-uwp.json",
+      "DeleteSourceFile": true
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\project.lock.json",
+      "NewName": "WasAppNamespace\\WasAppNamespace\\project-uwp.lock.json",
+      "DeleteSourceFile": true,
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Styles\\AppColors.xaml",
+      "Regex": {
+        "^.*<ResourceDictionary\\.ThemeDictionaries>(.*)</ResourceDictionary\\.ThemeDictionaries>(.*)": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ResourceDictionary xmlns=\"http://xamarin.com/schemas/2014/forms\" xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\" x:Class=\"WasAppNamespace.Styles.AppColors\">$1$2"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Styles\\FontSizes.xaml",
+      "Regex": {
+        "^.*/xaml\">(.*)": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ResourceDictionary xmlns=\"http://xamarin.com/schemas/2014/forms\" xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\" x:Class=\"WasAppNamespace.Styles.FontSizes\">$1"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\AboutPage.xaml",
+      "Regex": {
+        "^(<Page.*)$": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ContentPage xmlns=\"http://xamarin.com/schemas/2014/forms\" xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\" x:Class=\"WasAppNamespace.Pages.AboutPage\">\r\n  <ContentPage.Content>\r\n    <AbsoluteLayout>\r\n      <Image Source=\"splash\" Aspect=\"AspectFill\" AbsoluteLayout.LayoutFlags=\"All\" AbsoluteLayout.LayoutBounds=\"0, 0, 1.0, 1.0\" />\r\n    </AbsoluteLayout>\r\n  </ContentPage.Content>\r\n</ContentPage>\r\n<!--\r\n$1\r\n-->"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\FavoritesPage.xaml",
+      "Regex": {
+        "^(<Page.*)$": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ContentPage xmlns=\"http://xamarin.com/schemas/2014/forms\" xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\" x:Class=\"WasAppNamespace.Pages.FavoritesPage\">\r\n  <ContentPage.Content>\r\n    <AbsoluteLayout>\r\n      <Image Source=\"splash\" Aspect=\"AspectFill\" AbsoluteLayout.LayoutFlags=\"All\" AbsoluteLayout.LayoutBounds=\"0, 0, 1.0, 1.0\" />\r\n    </AbsoluteLayout>\r\n  </ContentPage.Content>\r\n</ContentPage>\r\n<!--\r\n$1\r\n-->"
+      },
+      "RegexOption": "Singleline",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\HomePage.xaml",
+      "Regex": {
+        "^(<Page.*)$": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ContentPage xmlns=\"http://xamarin.com/schemas/2014/forms\" xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\" x:Class=\"WasAppNamespace.Pages.HomePage\" xmlns:local=\"clr-namespace:WasAppNamespace\" xmlns:ffimageloading=\"clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms\" xmlns:fftransformations=\"clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations\" x:Name=\"acquaintanceListPage\" NavigationPage.BackButtonTitle=\"Home\">\r\n  <ContentPage.Resources>\r\n    <ResourceDictionary>\r\n      <local:BooleanInverter x:Key=\"BooleanInverter\" />\r\n    </ResourceDictionary>\r\n  </ContentPage.Resources>\r\n  <ContentPage.Content>\r\n    <OnPlatform x:TypeArguments=\"View\">\r\n      <!-- Here we have three different listview layouts, one for each platform. Mainly to support the floating action button in our Android version of the app. -->\r\n      <!-- You could simply have a single layout for all platforms, but our particular app design dictates some slight differences between platforms. -->\r\n      <OnPlatform.iOS>\r\n        <ListView ItemsSource=\"{Binding ViewModels}\" CachingStrategy=\"RecycleElement\" RowHeight=\"60\" HasUnevenRows=\"false\" ItemTapped=\"ItemTapped\">\r\n          <ListView.ItemTemplate>\r\n            <DataTemplate>\r\n              <ViewCell StyleId=\"disclosure\" Height=\"60\">\r\n                <ContentView Padding=\"20,0\">\r\n                  <AbsoluteLayout>\r\n                    <StackLayout Orientation=\"Horizontal\" Spacing=\"0\" AbsoluteLayout.LayoutFlags=\"XProportional\" AbsoluteLayout.LayoutBounds=\"0,0,AutoSize,AutoSize\">\r\n                      <ContentView Padding=\"15,0,0,0\">\r\n                        <StackLayout Spacing=\"0\">\r\n                          <Label Text=\"{Binding Title}\" HeightRequest=\"20\" VerticalTextAlignment=\"End\" LineBreakMode=\"TailTruncation\" />\r\n                        </StackLayout>\r\n                      </ContentView>\r\n                    </StackLayout>\r\n                  </AbsoluteLayout>\r\n                </ContentView>\r\n              </ViewCell>\r\n            </DataTemplate>\r\n          </ListView.ItemTemplate>\r\n        </ListView>\r\n      </OnPlatform.iOS>\r\n      <OnPlatform.Android>\r\n        <AbsoluteLayout>\r\n          <AbsoluteLayout.Children>\r\n            <ListView ItemsSource=\"{Binding ViewModels}\" CachingStrategy=\"RecycleElement\" RowHeight=\"60\" HasUnevenRows=\"false\" ItemTapped=\"ItemTapped\" AbsoluteLayout.LayoutFlags=\"All\" AbsoluteLayout.LayoutBounds=\"0,0,1,1\">\r\n              <ListView.ItemTemplate>\r\n                <DataTemplate>\r\n                  <ViewCell StyleId=\"disclosure\" Height=\"60\">\r\n                    <ContentView Padding=\"10,0\">\r\n                      <StackLayout Orientation=\"Horizontal\" Spacing=\"0\">\r\n                        <ContentView Padding=\"10,0,0,0\">\r\n                          <StackLayout Spacing=\"0\">\r\n                            <Label Text=\"{Binding Title}\" HeightRequest=\"20\" VerticalTextAlignment=\"End\" LineBreakMode=\"TailTruncation\" />\r\n                          </StackLayout>\r\n                        </ContentView>\r\n                      </StackLayout>\r\n                    </ContentView>\r\n                  </ViewCell>\r\n                </DataTemplate>\r\n              </ListView.ItemTemplate>\r\n            </ListView>\r\n            <local:FloatingActionButtonView x:Name=\"fab\" ImageName=\"fab_add\" ColorNormal=\"#547799\" ColorPressed=\"#172839\" ColorRipple=\"#2C3E50\" AbsoluteLayout.LayoutBounds=\"1.0, 1.0, AutoSize, AutoSize\" AbsoluteLayout.LayoutFlags=\"PositionProportional\" />\r\n          </AbsoluteLayout.Children>\r\n        </AbsoluteLayout>\r\n      </OnPlatform.Android>\r\n      <OnPlatform.WinPhone>\r\n        <StackLayout>\r\n          <Image Source=\"/AppStudio/Assert/Symbols/calendar.png\"></Image>\r\n        <ListView ItemsSource=\"{Binding ViewModels}\" ItemTapped=\"ItemTapped\" CachingStrategy=\"RecycleElement\" RowHeight=\"60\" HasUnevenRows=\"false\" AbsoluteLayout.LayoutFlags=\"All\" AbsoluteLayout.LayoutBounds=\"0,0,1,1\">\r\n          <ListView.ItemTemplate>\r\n            <DataTemplate>\r\n              <ViewCell StyleId=\"disclosure\" Height=\"60\">\r\n                <ContentView Padding=\"10,0\">\r\n                  <StackLayout Orientation=\"Horizontal\" Spacing=\"0\">\r\n                    <ContentView Padding=\"10,0,0,0\">\r\n                      <StackLayout Spacing=\"0\">\r\n                        <Label Text=\"{Binding Title}\" HeightRequest=\"20\" VerticalTextAlignment=\"End\" LineBreakMode=\"TailTruncation\" />\r\n                      </StackLayout>\r\n                    </ContentView>\r\n                  </StackLayout>\r\n                </ContentView>\r\n              </ViewCell>\r\n            </DataTemplate>\r\n          </ListView.ItemTemplate>\r\n        </ListView>\r\n        </StackLayout>\r\n      </OnPlatform.WinPhone>\r\n    </OnPlatform>\r\n  </ContentPage.Content>\r\n</ContentPage>\r\n<!--\r\n$1\r\n-->"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\SearchPage.xaml",
+      "Regex": {
+        "^(<Page.*)$": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ContentPage xmlns=\"http://xamarin.com/schemas/2014/forms\" xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\" x:Class=\"WasAppNamespace.Pages.SearchPage\">\r\n  <ContentPage.Content>\r\n    <AbsoluteLayout>\r\n      <Image Source=\"splash\" Aspect=\"AspectFill\" AbsoluteLayout.LayoutFlags=\"All\" AbsoluteLayout.LayoutBounds=\"0, 0, 1.0, 1.0\" />\r\n    </AbsoluteLayout>\r\n  </ContentPage.Content>\r\n</ContentPage>\r\n<!--\r\n$1\r\n-->"
+      },
+      "RegexOption": "Singleline",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\ShellPage.xaml",
+      "Regex": {
+        "^(<Page.*)$": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ContentPage\r\n    xmlns=\"http://xamarin.com/schemas/2014/forms\"\r\n    xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\"\r\n    x:Class=\"WasAppNamespace.Pages.ShellPage\"\r\n    xmlns:controls=\"clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions\"\r\n    Title=\"{Binding Title}\"\r\n    Icon=\"{Binding Icon}\">\r\n  <ContentPage.Content>\r\n    <ListView\r\n           CachingStrategy=\"RecycleElement\"\r\n           SeparatorColor=\"Transparent\"\r\n           HasUnevenRows=\"True\"\r\n           x:Name=\"ListViewMenu\" ItemTapped=\"ItemTapped\">\r\n      <ListView.Header>\r\n        <Grid>\r\n          <Grid.ColumnDefinitions>\r\n            <ColumnDefinition Width=\"10\"/>\r\n            <ColumnDefinition Width=\"*\"/>\r\n            <ColumnDefinition Width=\"10\"/>\r\n          </Grid.ColumnDefinitions>\r\n          <Grid.RowDefinitions>\r\n            <RowDefinition Height=\"30\"/>\r\n            <RowDefinition Height=\"30\"/>\r\n            <RowDefinition Height=\"Auto\"/>\r\n            <RowDefinition Height=\"5\"/>\r\n          </Grid.RowDefinitions>\r\n          <BoxView Grid.ColumnSpan=\"3\"\r\n                   Grid.RowSpan=\"4\"\r\n                   BackgroundColor=\"#03A9F4\"/>\r\n          <Label\r\n              Grid.Column=\"1\"\r\n              Grid.Row=\"2\"\r\n              Text=\"WasAppNamespace\"\r\n              Style=\"{DynamicResource SubtitleStyle}\"/>\r\n        </Grid>\r\n      </ListView.Header>\r\n      <ListView.ItemTemplate>\r\n        <DataTemplate>\r\n          <ViewCell>\r\n            <Grid Padding=\"20\">\r\n              <Grid.ColumnDefinitions>\r\n                <ColumnDefinition Width=\"Auto\"/>\r\n                <ColumnDefinition Width=\"*\" />\r\n              </Grid.ColumnDefinitions>\r\n              <Image Source=\"{Binding Icon}\" HeightRequest=\"25\" WidthRequest=\"25\"/>\r\n              <Label Grid.Column=\"1\" Text=\"{Binding Caption}\" FontSize=\"24\"/>\r\n            </Grid>\r\n          </ViewCell>\r\n        </DataTemplate>\r\n      </ListView.ItemTemplate>\r\n    </ListView>\r\n  </ContentPage.Content>\r\n</ContentPage>\r\n<!--\r\n$1\r\n-->"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\AboutPage.xaml.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing Xamarin.Forms;\r\nusing Xamarin.Forms.Xaml;\r\nusing System;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Controls;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Navigation;)": "$1$3$2",
+        "(Page[ \t]*:)[ \t]*(Page)": "$1\r\n#if UWP\r\n        $2\r\n#else\r\n        ContentPage\r\n#endif",
+        "([\\{\\}][\r\n \t]*)((\r\n[ \t]*public AboutThisAppViewModel AboutThisAppModel )\\{ get;[a-z ]+set; \\})": "$1\r\n#if UWP$2\r\n#else\r\n        public AboutThisAppViewModel ViewModel => BindingContext as AboutThisAppViewModel;\r\n#endif",
+        "(#endif[\n\r \t]*)(\r\n[ \t]*protected[a-z ]+void OnNavigatedTo\\(.*base\\.OnNavigatedTo\\(([^\\}]*\r\n[ \t]*\\}))": "$1\r\n#if UWP$2\r\n#endif",
+        "(public AboutPage\\(\\)([\r\n \t]*)\\{)([^\\}]*)(\r\n[ \t]*\\})": "$1\r\n#if UWP$3\r\n#else$2    BindingContext = new AboutThisAppViewModel();$2    this.InitializeComponent();\r\n#endif$4"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\FavoritesPage.xaml.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing Xamarin.Forms;\r\nusing Xamarin.Forms.Xaml;\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.Controls;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Controls;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Navigation;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Controls;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2",
+        "(Page[ \t]*:)[ \t]*(Page)": "$1\r\n#if UWP\r\n        $2\r\n#else\r\n        ContentPage\r\n#endif",
+        "([\\{\\}][\r\n \t]*)(\r\n[ \t]*protected[a-z ]+void OnNavigatedTo\\(.*base\\.OnNavigatedTo\\(([^\\}]*\r\n[ \t]*\\}))": "$1\r\n#if UWP$2\r\n#endif",
+        "([\\{\\}][\r\n \t]*)((\r\n[ \t]*public FavoritesViewModel ViewModel )\\{ get;[a-z ]+set; \\})": "$1\r\n#if UWP$2\r\n#else$3=> BindingContext as FavoritesViewModel;\r\n#endif",
+        "(public FavoritesPage\\(\\)([\r\n \t]*)\\{)([^\\}]*)(\r\n[ \t]*\\})": "$1\r\n#if UWP$3\r\n#else$2    BindingContext = new FavoritesViewModel();$2    this.InitializeComponent();\r\n#endif$4"
+      },
+      "RegexOption": "Singleline",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\HomePage.xaml.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing Xamarin.Forms;\r\nusing Xamarin.Forms.Xaml;\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.Commands;\r\nusing AppStudio.Xamarin.Navigation;\r\nusing System;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Controls;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Navigation;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Commands;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Navigation;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2",
+        "(Page[ \t]*:)[ \t]*(Page)": "$1\r\n#if UWP\r\n        $2\r\n#else\r\n        ContentPage\r\n#endif",
+        "([\\{\\}][\r\n \t]*)((\r\n[ \t]*public MainViewModel ViewModel )\\{ get;[a-z ]+set; \\})": "$1\r\n#if UWP$2\r\n#else$3=> BindingContext as MainViewModel;\r\n#endif",
+        "(#endif[\r\n \t]*)(\r\n[ \t]*protected[a-z ]+void OnNavigatedTo\\(.*)(\r\n[ \t]*\\}[\r\n \t]*\\}[\r\n \t]*)": "$1\r\n#if UWP$2\r\n#else\r\n        /// <summary>\r\n        /// The action to take when a list item is tapped.\r\n        /// </summary>\r\n        /// <param name=\"sender\"> The sender.</param>\r\n        /// <param name=\"e\">The ItemTappedEventArgs</param>\r\n        void ItemTapped(object sender, ItemTappedEventArgs e)\r\n        {\r\n            //\tNavigation.PushAsync(new AcquaintanceDetailPage() { BindingContext = new NavParameter() {SelectedId = ((Contacts1Schema)e.Item)._id,Items=ViewModel.}});\r\n            ((ListViewModel)e.Item).SectionHeaderClickCommand.Execute((ListViewModel)e.Item);\r\n            // prevents the list from displaying the navigated item as selected when navigating back to the list\r\n            ((ListView)sender).SelectedItem = null;\r\n        }\r\n#endif$3",
+        "(public HomePage\\(\\)([\r\n \t]*)\\{)([^\\}]*)(\r\n[ \t]*\\})": "$1\r\n#if UWP$3\r\n#else$2    BindingContext = new MainViewModel(12);$2    this.InitializeComponent();\r\n#endif$4"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\SearchPage.xaml.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing Xamarin.Forms;\r\nusing Xamarin.Forms.Xaml;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Controls;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Navigation;)": "$1$3$2",
+        "(Page[ \t]*:)[ \t]*(Page)": "$1\r\n#if UWP\r\n        $2\r\n#else\r\n        ContentPage\r\n#endif",
+        "([\\{\\}][\r\n \t]*)(\r\n[ \t]*protected[a-z ]+void OnNavigatedTo\\(.*base\\.OnNavigatedTo\\(([^\\}]*\r\n[ \t]*\\}))": "$1\r\n#if UWP$2\r\n#endif",
+        "([\\{\\}][\r\n \t]*)((\r\n[ \t]*public SearchViewModel ViewModel )\\{ get;[a-z ]+set; \\})": "$1\r\n#if UWP$2\r\n#else$3=> BindingContext as SearchViewModel;\r\n#endif",
+        "(public SearchPage\\(\\)([\r\n \t]*)\\{)([^\\}]*)(\r\n[ \t]*\\})": "$1\r\n#if UWP$3\r\n#else$2    BindingContext = new SearchViewModel();$2    this.InitializeComponent();\r\n#endif$4"
+      },
+      "RegexOption": "Singleline",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\ShellPage.xaml.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing Xamarin.Forms;\r\nusing Xamarin.Forms.Xaml;\r\nusing WasAppNamespace.AppStudio.ViewModels;\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.Controls;\r\nusing AppStudio.Xamarin.Navigation;\r\nusing AppStudio.Xamarin.Services;\r\nusing DependencyObject = Xamarin.Forms.BindableObject;\r\nusing DependencyProperty = Xamarin.Forms.BindableProperty;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Media\\.Imaging;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Controls;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Input;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Navigation;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Core;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.ViewManagement;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.Foundation;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Controls;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Navigation;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2",
+        "(Page[ \t]*:)[ \t]*(Page)": "$1\r\n#if UWP\r\n        $2\r\n#else\r\n        ContentPage\r\n#endif",
+        "(#endregion[\r\n \t]*)(\r\n[ \t]*protected[a-z ]+void OnNavigatedTo\\(.*Bootstrap\\.Init\\(([^\\}]*\r\n[ \t]*\\}))": "$1\r\n#if UWP$2\r\n#else\r\n        /// <summary>\r\n        /// The action to take when a list item is tapped.\r\n        /// </summary>\r\n        /// <param name=\"sender\"> The sender.</param>\r\n        /// <param name=\"e\">The ItemTappedEventArgs</param>\r\n        void ItemTapped(object sender, ItemTappedEventArgs e)\r\n        {\r\n            NavigationItem item = ((NavigationItem) e.Item);\r\n            if (!item.IsSeparator && item.OnClick != null)\r\n            {\r\n                //\tNavigation.PushAsync(new AcquaintanceDetailPage() { BindingContext = new NavParameter() {SelectedId = ((Contacts1Schema)e.Item)._id,Items=ViewModel.}});\r\n                item.OnClick(item);\r\n                // prevents the list from displaying the navigated item as selected when navigating back to the list\r\n                ((ListView)sender).SelectedItem = null;\r\n            }\r\n        }\r\n#endif",
+        "([\\{\\}][\r\n \t]*)((\r\n[ \t]*)public ShellControl ShellControl.*)(\r\n[ \t]*public bool)": "$1\r\n#if UWP$2\r\n#else$3public ShellViewModel ViewModel => BindingContext as ShellViewModel;\r\n$3private RootPage _root;$3public ShellPage(RootPage rootPage)$3{$3    InitializeComponent();$3    BindingContext = new ShellViewModel();$3    _root = rootPage;$3    ShellPage.Current = this;$3    InitializeNavigationItems();$3    ListViewMenu.ItemsSource = NavigationItems;$3}\r\n#endif$4",
+        "(#endregion[\r\n \t]*)(\r\n[ \t]*private void OnSizeChanged\\(.*)(\r\n[ \t]*\\}[\r\n \t]*\\}[\r\n \t]*$)": "$1\r\n#if UWP$2\r\n#endif$3",
+        "((?:#endif|\\})[\r\n \t]*)(\r\n[ \t]*public static readonly DependencyProperty NavigationItemsProperty = DependencyProperty\\.Register\\(\"NavigationItems\", typeof\\(ObservableCollection<NavigationItem>\\), typeof\\(ShellPage\\), new PropertyMetadata\\(new ObservableCollection<NavigationItem>\\(\\)\\)\\);)": "$1\r\n#if UWP$2\r\n#else\r\n        public static readonly DependencyProperty NavigationItemsProperty = DependencyPropertyHelper.Register(\"NavigationItems\", typeof(ObservableCollection<NavigationItem>), typeof(ShellPage), new ObservableCollection<NavigationItem>());\r\n#endif",
+        ",[ \t]*((\r\n[ \t]*)\\([a-zA-Z0-9]+\\) => NavigationService\\.NavigateToRoot\\(\\),)": ",\r\n#if UWP$1\r\n#else$2async (ni) => await ViewModel.PopToRootAsync(),\r\n#endif",
+        ",[ \t]*((\r\n[ \t]*)AppNavigation\\.ActionFromPage\\(\"([a-zA-Z0-9]+)\"\\),)": ",\r\n#if UWP$1\r\n#else$2async (ni) => await ViewModel.PushAsync(new $3()),\r\n#endif",
+        "\\{[ \t]*(Source = new BitmapImage\\(new Uri\\(\"ms-appx:///Assets/DataImages/([^\"]+\"\\))\\))[ \t]*": "\r\n                {\r\n#if UWP\r\n                    $1\r\n#else\r\n                    Source = ImageSource.FromResource(\"WasAppNameSpace.Assets.DataImages.$2\r\n#endif\r\n                "
+      },
+      "RegexOption": "Singleline",
+      "VerifySearchRegex": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\WasAppNamespace.csproj",
+      "Regex": {
+        "(</PropertyGroup>[\r\n \t]*<ItemGroup>)": "$1\r\n    <Compile Include=\"ViewModels\\FavoritesViewModel.cs\" />\r\n    <Compile Include=\"Pages\\FavoritesPage.xaml.cs\">\r\n      <DependentUpon>FavoritesPage.xaml</DependentUpon>\r\n    </Compile>\r\n    <Compile Include=\"ViewModels\\SearchViewModel.cs\" />\r\n    <Compile Include=\"Pages\\SearchPage.xaml.cs\">\r\n      <DependentUpon>SearchPage.xaml</DependentUpon>\r\n    </Compile>",
+        "(<ItemGroup>)([\r\n \t]*<EmbeddedResource Include=\"Pages)": "$1\r\n    <EmbeddedResource Include=\"Pages\\FavoritesPage.xaml\">\r\n      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>\r\n      <SubType>Designer</SubType>\r\n    </EmbeddedResource>\r\n    <EmbeddedResource Include=\"Pages\\SearchPage.xaml\">\r\n      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>\r\n      <SubType>Designer</SubType>\r\n    </EmbeddedResource>$2"
+      }
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\AboutThisAppViewModel.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing Xamarin.Forms;\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.Commands;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Media\\.Imaging;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.ApplicationModel;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Commands;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2",
+        ";([\r\n \t]*this.AppVersion[ \t]*=[^;]+;)": ";\r\n#if UWP$1\r\n#else\r\n            this.AppVersion = string.Format(\"{0}.{1}.{2}.{3}\", 1, 0, 0, 0);\r\n#endif\r\n",
+        ";([\r\n \t]*this.AppLogo = new BitmapImage\\(new Uri\\(\"ms-appx:///Assets/([^\"]+\"\\))\\);)": ";\r\n#if UWP$1\r\n#else\r\n            this.AppLogo = new Image { Source = ImageSource.FromResource(\"WasAppNameSpace.Assets.$2 };\r\n#endif\r\n",
+        "}(([\r\n \t]*public )Bitmap(Image AppLogo[ \t]*\\{[^\r\n]+\r\n))": "}\r\n#if UWP$1#else$2$3#endif\r\n"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\DetailRelatedViewModel.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.Commands;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Commands;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\FavoritesViewModel.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.Commands;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Commands;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2",
+        ";([\r\n \t]*ShowRoamingWarning[ \t]*=[^;]+;)": ";\r\n#if UWP$1\r\n#endif\r\n",
+        "(List<Task> loadDataTasks[ \\t]*=[^;]+;)([\\r\\n \\t]*if(?:(?!(\\r\\n[ \\t]*await)).)*)": "$1\r\n#if UWP$2\r\n#endif$3"
+      },
+      "RegexOption": "Singleline",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\GroupedItemViewModel.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.DataSync;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.DataSync;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\GroupedListViewModel.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing AppStudio.Xamarin.Cache;\r\nusing AppStudio.Xamarin.Commands;\r\nusing AppStudio.Xamarin.Actions;\r\nusing AppStudio.Xamarin.DataSync;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Cache;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Commands;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Actions;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.DataSync;)": "$1$3$2"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\MainViewModel.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.Actions;\r\nusing AppStudio.Xamarin.Navigation;\r\nusing AppStudio.Xamarin.Commands;\r\nusing Xamarin.Forms;\r\nusing Xamarin.Forms.Xaml;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Controls;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Actions;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Navigation;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Commands;)": "$1$3$2"
+      },
+      "RegexOption": "Singleline"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\PrivacyViewModel.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing AppStudio.Xamarin;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2"
+      },
+      "RegexOption": "Singleline",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\ViewModels\\SearchViewModel.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.Commands;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Commands;)": "$1$3$2"
+      },
+      "RegexOption": "Singleline",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Extensions\\StringExtensions.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing System.Reflection;\r\nusing System.Resources;\r\n#endif\r\n$2",
+        "(\\}[\r\n \t]*)(\r\n[ \t]*\\}[\r\n \t]*\\}[\r\n \t]*$)": "$1\r\n#if !UWP\r\n        public static string StringResource(this string s)\r\n        {\r\n            var resourceManager = new ResourceManager(\"WasAppNamespace.Strings.Resources\", typeof(StringExtensions).GetTypeInfo().Assembly);\r\n            return resourceManager.GetString(s);\r\n        }\r\n#endif$2"
+      },
+      "RegexOption": "Singleline"
+    }
+  ],
+  "SectionFiles": [
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Sections\\WasAppSectionNameSection.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing Xamarin.Forms;\r\nusing Xamarin.Forms.Xaml;\r\nusing System.Reflection;\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.Actions;\r\nusing AppStudio.Xamarin.Commands;\r\n#endif\r\n$2",
+        "^(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.Storage;)": "$1$3$2",
+        "^(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.ApplicationModel\\.Appointments;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Actions;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp\\.Commands;)": "$1$3$2",
+        ",((\r\n[ \t]*)StoreId = ApplicationData[^,]*,[^,]*,)": ",\r\n#if UWP$1\r\n#else$2StoreId = Guid.Empty.ToString(),$2DeviceType = nameof(Device.Idiom),\r\n#endif",
+        "(\\{)((\r\n[ \t]*)FilePath)": "$1\r\n#if !UWP$3AssemblyForEmbeddedResource = Application.Current.GetType().GetTypeInfo().Assembly,\r\n#endif$2"
+      },
+      "RegexOption": "Singleline",
+      "VerifySearchRegex": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\WasAppSectionNameDetailPage.xaml",
+      "Regex": {
+        "^(<Page.*)$": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ContentPage xmlns=\"http://xamarin.com/schemas/2014/forms\" xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\" x:Class=\"WasAppNamespace.Pages.WasAppSectionNameDetailPage\" Title=\"{Binding SourceItem.DisplayName}\" xmlns:local=\"clr-namespace:WasAppNamespace\" xmlns:ffimageloading=\"clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms\" xmlns:fftransformations=\"clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations\" xmlns:maps=\"clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps\" NavigationPage.BackButtonTitle=\"Details\">\r\n  <ContentPage.Resources>\r\n    <ResourceDictionary>\r\n      <local:BooleanInverter x:Key=\"BooleanInverter\" />\r\n    </ResourceDictionary>\r\n  </ContentPage.Resources>\r\n  <ContentPage.ToolbarItems>\r\n    <!--\r\n    <ToolbarItem Text=\"Delete\" Icon=\"delete.png\" Command=\"{Binding DeleteAcquaintanceCommand}\" />\r\n    <ToolbarItem Text=\"Edit\" Icon=\"edit.png\" Command=\"{Binding EditAcquaintanceCommand}\" />\r\n    -->\r\n  </ContentPage.ToolbarItems>\r\n  <ContentPage.Content>\r\n      <StackLayout Spacing=\"10\" AbsoluteLayout.LayoutFlags=\"All\" AbsoluteLayout.LayoutBounds=\"0,0,1,1\">\r\n        <ScrollView Orientation=\"Vertical\" VerticalOptions=\"FillAndExpand\">\r\n          <StackLayout Orientation=\"Vertical\" Spacing=\"10\">\r\n                  <ffimageloading:CachedImage x:Name=\"ProfilePhoto\" HorizontalOptions=\"Center\" VerticalOptions=\"CenterAndExpand\" DownsampleToViewSize=\"true\" Source=\"{Binding SelectedItem.ImageUrl}\" LoadingPlaceholder=\"placeholderProfileImage.png\">\r\n                  </ffimageloading:CachedImage>\r\n            <StackLayout Orientation=\"Vertical\" Padding=\"10\">\r\n                  <Label Text=\"{Binding SelectedItem.Title}\" />\r\n                  <Label Text=\"{Binding SelectedItem.SubTitle}\" />\r\n                  <!--Ex:\r\n                  <Label Text=\"{Binding SourceItem.[Property of WasAppSchemaNameSchema]}\" FontSize=\"Small\" />\r\n                  -->\r\n            </StackLayout>\r\n          </StackLayout>\r\n        </ScrollView>\r\n      </StackLayout>\r\n  </ContentPage.Content>\r\n</ContentPage>\r\n<!--\r\n$1\r\n-->"
+      },
+      "RegexOption": "Singleline",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\WasAppSectionNameListPage.xaml",
+      "Regex": {
+        "^(<Page.*)$": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ContentPage xmlns=\"http://xamarin.com/schemas/2014/forms\" xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\" x:Class=\"WasAppNamespace.Pages.WasAppSectionNameListPage\" xmlns:local=\"clr-namespace:WasAppNamespace\" xmlns:ffimageloading=\"clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms\" xmlns:fftransformations=\"clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations\" x:Name=\"acquaintanceListPage\" NavigationPage.BackButtonTitle=\"List\">\r\n  <ContentPage.Resources>\r\n    <ResourceDictionary>\r\n      <local:BooleanInverter x:Key=\"BooleanInverter\" />\r\n    </ResourceDictionary>\r\n  </ContentPage.Resources>\r\n  <ContentPage.ToolbarItems>\r\n    <!-- The Refresh ToolBarItem is only for UWP. See code-behind. -->\r\n    <ToolbarItem x:Name=\"refreshToolbarItem\" Icon=\"refresh.png\" Text=\"Refresh\" Command=\"{Binding RefreshAcquaintancesCommand}\" />\r\n    <!-- The Settings ToolBarItem is present on all platforms. -->\r\n    <ToolbarItem x:Name=\"settingsToolbarItem\" Icon=\"settings.png\" Text=\"Settings\" Command=\"{Binding ShowSettingsCommand}\" />\r\n    <!-- The Add Acquaintance ToolBarItem is removed for Android. See code-behind.  -->\r\n    <ToolbarItem x:Name=\"addAcquaintanceToolbarItem\" Icon=\"add.png\" Text=\"New\" Command=\"{Binding NewAcquaintanceCommand}\" />\r\n  </ContentPage.ToolbarItems>\r\n  <ContentPage.Content>\r\n    <OnPlatform x:TypeArguments=\"View\">\r\n      <!-- Here we have three different listview layouts, one for each platform. Mainly to support the floating action button in our Android version of the app. -->\r\n      <!-- You could simply have a single layout for all platforms, but our particular app design dictates some slight differences between platforms. -->\r\n      <OnPlatform.iOS>\r\n        <ListView ItemsSource=\"{Binding Items}\" CachingStrategy=\"RecycleElement\" RowHeight=\"60\" HasUnevenRows=\"false\" ItemTapped=\"ItemTapped\" IsPullToRefreshEnabled=\"true\" RefreshCommand=\"{Binding RefreshAcquaintancesCommand}\" IsRefreshing=\"{Binding IsBusy, Mode=OneWay}\">\r\n          <ListView.ItemTemplate>\r\n            <DataTemplate>\r\n              <ViewCell StyleId=\"disclosure\" Height=\"60\">\r\n                <ViewCell.ContextActions>\r\n                  <MenuItem Text=\"Email\" Command=\"{Binding Source={x:Reference acquaintanceListPage}, Path=BindingContext.EmailCommand}\" CommandParameter=\"{Binding Id}\" />\r\n                  <MenuItem Text=\"Text\" Command=\"{Binding Source={x:Reference acquaintanceListPage}, Path=BindingContext.MessageNumberCommand}\" CommandParameter=\"{Binding Id}\" />\r\n                  <MenuItem Text=\"Call\" Command=\"{Binding Source={x:Reference acquaintanceListPage}, Path=BindingContext.DialNumberCommand}\" CommandParameter=\"{Binding Id}\" />\r\n                </ViewCell.ContextActions>\r\n                <ContentView Padding=\"10,0\">\r\n                  <AbsoluteLayout>\r\n                    <StackLayout Orientation=\"Horizontal\" Spacing=\"0\" AbsoluteLayout.LayoutFlags=\"XProportional\" AbsoluteLayout.LayoutBounds=\"0,0,AutoSize,AutoSize\">\r\n                      <ContentView Padding=\"3\" WidthRequest=\"54\">\r\n                        <ffimageloading:CachedImage HorizontalOptions=\"Center\" VerticalOptions=\"Center\" WidthRequest=\"50\" HeightRequest=\"50\" DownsampleToViewSize=\"true\" Source=\"{Binding ImageUrl}\" LoadingPlaceholder=\"placeholderProfileImage.png\">\r\n                          <ffimageloading:CachedImage.Transformations>\r\n                            <fftransformations:CircleTransformation />\r\n                          </ffimageloading:CachedImage.Transformations>\r\n                        </ffimageloading:CachedImage>\r\n                      </ContentView>\r\n                      <ContentView Padding=\"10,0,0,0\">\r\n                        <StackLayout Spacing=\"0\">\r\n                          <Label Text=\"{Binding Title}\" HeightRequest=\"20\" VerticalTextAlignment=\"End\" LineBreakMode=\"TailTruncation\" />\r\n                          <Label Text=\"{Binding SubTitle}\" HeightRequest=\"20\" VerticalTextAlignment=\"End\" FontSize=\"Micro\" LineBreakMode=\"TailTruncation\" />\r\n                          <Label Text=\"{Binding Content}\" HeightRequest=\"20\" VerticalTextAlignment=\"Start\" FontSize=\"Micro\" LineBreakMode=\"TailTruncation\" TextColor=\"Silver\" />\r\n                        </StackLayout>\r\n                      </ContentView>\r\n                    </StackLayout>\r\n                  </AbsoluteLayout>\r\n                </ContentView>\r\n              </ViewCell>\r\n            </DataTemplate>\r\n          </ListView.ItemTemplate>\r\n        </ListView>\r\n      </OnPlatform.iOS>\r\n      <OnPlatform.Android>\r\n        <AbsoluteLayout>\r\n          <AbsoluteLayout.Children>\r\n            <ListView ItemsSource=\"{Binding Items}\" CachingStrategy=\"RecycleElement\" RowHeight=\"60\" HasUnevenRows=\"false\" ItemTapped=\"ItemTapped\" IsPullToRefreshEnabled=\"true\" RefreshCommand=\"{Binding RefreshAcquaintancesCommand}\" IsRefreshing=\"{Binding IsBusy, Mode=OneWay}\" AbsoluteLayout.LayoutFlags=\"All\" AbsoluteLayout.LayoutBounds=\"0,0,1,1\">\r\n              <ListView.ItemTemplate>\r\n                <DataTemplate>\r\n                  <ViewCell StyleId=\"disclosure\" Height=\"60\">\r\n                    <ViewCell.ContextActions>\r\n                      <MenuItem Text=\"Email\" Command=\"{Binding Source={x:Reference acquaintanceListPage}, Path=BindingContext.EmailCommand}\" CommandParameter=\"{Binding Id}\" />\r\n                      <MenuItem Text=\"Text\" Command=\"{Binding Source={x:Reference acquaintanceListPage}, Path=BindingContext.MessageNumberCommand}\" CommandParameter=\"{Binding Id}\" />\r\n                      <MenuItem Text=\"Call\" Command=\"{Binding Source={x:Reference acquaintanceListPage}, Path=BindingContext.DialNumberCommand}\" CommandParameter=\"{Binding Id}\" />\r\n                    </ViewCell.ContextActions>\r\n                    <ContentView Padding=\"10,0\">\r\n                      <StackLayout Orientation=\"Horizontal\" Spacing=\"0\">\r\n                        <ContentView Padding=\"3\" WidthRequest=\"54\">\r\n                          <ffimageloading:CachedImage HorizontalOptions=\"Center\" VerticalOptions=\"Center\" WidthRequest=\"50\" HeightRequest=\"50\" DownsampleToViewSize=\"true\" Source=\"{Binding ImageUrl}\" LoadingPlaceholder=\"placeholderProfileImage.png\">\r\n                            <ffimageloading:CachedImage.Transformations>\r\n                              <fftransformations:CircleTransformation />\r\n                            </ffimageloading:CachedImage.Transformations>\r\n                          </ffimageloading:CachedImage>\r\n                        </ContentView>\r\n                        <ContentView Padding=\"10,0,0,0\">\r\n                          <StackLayout Spacing=\"0\">\r\n                            <Label Text=\"{Binding Title}\" HeightRequest=\"20\" VerticalTextAlignment=\"End\" LineBreakMode=\"TailTruncation\" />\r\n                            <Label Text=\"{Binding SubTitle}\" HeightRequest=\"20\" VerticalTextAlignment=\"End\" FontSize=\"Micro\" LineBreakMode=\"TailTruncation\" />\r\n                            <Label Text=\"{Binding Content}\" HeightRequest=\"20\" VerticalTextAlignment=\"Start\" FontSize=\"Micro\" LineBreakMode=\"TailTruncation\" TextColor=\"Silver\" />\r\n                          </StackLayout>\r\n                        </ContentView>\r\n                      </StackLayout>\r\n                    </ContentView>\r\n                  </ViewCell>\r\n                </DataTemplate>\r\n              </ListView.ItemTemplate>\r\n            </ListView>\r\n            <local:FloatingActionButtonView x:Name=\"fab\" ImageName=\"fab_add\" ColorNormal=\"#547799\" ColorPressed=\"#172839\" ColorRipple=\"#2C3E50\" AbsoluteLayout.LayoutBounds=\"1.0, 1.0, AutoSize, AutoSize\" AbsoluteLayout.LayoutFlags=\"PositionProportional\" />\r\n          </AbsoluteLayout.Children>\r\n        </AbsoluteLayout>\r\n      </OnPlatform.Android>\r\n      <OnPlatform.WinPhone>\r\n        <ListView ItemsSource=\"{Binding Items}\" ItemTapped=\"ItemTapped\" CachingStrategy=\"RecycleElement\" RowHeight=\"60\" HasUnevenRows=\"false\"  IsPullToRefreshEnabled=\"true\" RefreshCommand=\"{Binding RefreshAcquaintancesCommand}\" IsRefreshing=\"{Binding IsBusy, Mode=OneWay}\" AbsoluteLayout.LayoutFlags=\"All\" AbsoluteLayout.LayoutBounds=\"0,0,1,1\">\r\n          <ListView.ItemTemplate>\r\n            <DataTemplate>\r\n              <ViewCell StyleId=\"disclosure\" Height=\"60\">\r\n                <ViewCell.ContextActions>\r\n                  <MenuItem Text=\"Email\" Command=\"{Binding Source={x:Reference acquaintanceListPage}, Path=BindingContext.EmailCommand}\" CommandParameter=\"{Binding Id}\" />\r\n                  <MenuItem Text=\"Text\" Command=\"{Binding Source={x:Reference acquaintanceListPage}, Path=BindingContext.MessageNumberCommand}\" CommandParameter=\"{Binding Id}\" />\r\n                  <MenuItem Text=\"Call\" Command=\"{Binding Source={x:Reference acquaintanceListPage}, Path=BindingContext.DialNumberCommand}\" CommandParameter=\"{Binding Id}\" />\r\n                </ViewCell.ContextActions>\r\n                <ContentView Padding=\"10,0\">\r\n                  <StackLayout Orientation=\"Horizontal\" Spacing=\"0\">\r\n                    <ContentView Padding=\"3\" WidthRequest=\"54\">\r\n                      <ffimageloading:CachedImage HorizontalOptions=\"Center\" VerticalOptions=\"Center\" WidthRequest=\"50\" HeightRequest=\"50\" DownsampleToViewSize=\"true\" Source=\"{Binding ImageUrl}\" LoadingPlaceholder=\"placeholderProfileImage.png\">\r\n                        <ffimageloading:CachedImage.Transformations>\r\n                          <fftransformations:CircleTransformation />\r\n                        </ffimageloading:CachedImage.Transformations>\r\n                      </ffimageloading:CachedImage>\r\n                    </ContentView>\r\n                    <ContentView Padding=\"10,0,0,0\">\r\n                      <StackLayout Spacing=\"0\">\r\n                        <Label Text=\"{Binding Title}\" HeightRequest=\"20\" VerticalTextAlignment=\"End\" LineBreakMode=\"TailTruncation\" />\r\n                        <Label Text=\"{Binding SubTitle}\" HeightRequest=\"20\" VerticalTextAlignment=\"End\" FontSize=\"Micro\" LineBreakMode=\"TailTruncation\" />\r\n                        <Label Text=\"{Binding Content}\" HeightRequest=\"20\" VerticalTextAlignment=\"Start\" FontSize=\"Micro\" LineBreakMode=\"TailTruncation\" TextColor=\"Silver\" />\r\n                      </StackLayout>\r\n                    </ContentView>\r\n                  </StackLayout>\r\n                </ContentView>\r\n              </ViewCell>\r\n            </DataTemplate>\r\n          </ListView.ItemTemplate>\r\n        </ListView>\r\n      </OnPlatform.WinPhone>\r\n    </OnPlatform>\r\n  </ContentPage.Content>\r\n</ContentPage>\r\n<!--\r\n$1\r\n-->"
+      },
+      "RegexOption": "Singleline",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\WasAppSectionNameDetailPage.xaml.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing Xamarin.Forms;\r\nusing Xamarin.Forms.Xaml;\r\nusing Xamarin.Forms.Maps;\r\nusing AppStudio.Xamarin.Navigation;\r\nusing AppStudio.DataProviders;\r\nusing System.Linq;\r\nusing System.Threading.Tasks;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.ApplicationModel\\.DataTransfer;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Navigation;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Controls;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2",
+        "(Page[ \t]*:)[ \t]*(Page)": "$1\r\n#if UWP\r\n        $2\r\n#else\r\n        ContentPage, IPageWithNavParameter\r\n#endif",
+        "([\\{\\}][\r\n \t]*)((\r\n[ \t]*public DetailViewModel ViewModel )\\{ get;[a-z ]+set; \\})": "$1\r\n#if UWP$2\r\n#else$3=> BindingContext as DetailViewModel;\r\n#endif",
+        "([\\{\\}][\r\n \t]*)((\r\n[ \t]*)private DataTransferManager _dataTransferManager;)": "$1\r\n#if UWP$2\r\n#else$3private object _navParameter;$3public object NavParameter$3{$3    get { return _navParameter; }$3    set$3    {$3        _navParameter = value;$3        DetailViewModel viewModel = ViewModelFactory.NewDetail(new WasAppSectionNameSection());$3        viewModel.SourceItem = (_navParameter as NavDetailParameter)?.Items?.FirstOrDefault(item => item._id == (_navParameter as NavDetailParameter)?.SelectedId);$3        BindingContext = viewModel;$3    }$3}\r\n#endif",
+        "(public WasAppSectionNameDetailPage\\(\\)([\r\n \t]*)\\{)([^\\}]*)(\r\n[ \t]*\\})": "$1\r\n#if UWP$3\r\n#else$2    //BindingContext = ViewModelFactory.NewDetail(new WasAppSectionNameSection());$2    this.InitializeComponent();\r\n#endif$4",
+        "(#endif[\r\n \t]*)(\r\n[ \t]*protected[a-z ]+void OnNavigatedTo\\(.*ViewModel\\.ShareContent\\(([^\\}]*\r\n[ \t]*\\}))": "$1\r\n#if UWP$2\r\n#else\r\n        protected override async void OnAppearing()\r\n        {\r\n            base.OnAppearing();\r\n            await ViewModel.LoadStateAsync(NavParameter as NavDetailParameter);\r\n            //            if (ViewModel == null)\r\n            //              ViewModel = BindingContext as DetailViewModel<SchemaBase>;\r\n            // Typically, is preferable to call into the viewmodel for OnAppearing() logic to be performed,\r\n            // but we're not doing that in this case because we need to interact with the Xamarin.Forms.Map property on this Page.\r\n            // In the future, the Map type and it's properties may get more binding support, so that the map setup can be omitted from code-behind.\r\n            try\r\n            {\r\n                if (ViewModel.HasAddress)\r\n                {\r\n                    var map = this.FindByName<Map>(\"AcquaintanceMap\");\r\n                    if (map != null)\r\n                        await SetupMap(map);\r\n                }\r\n            }\r\n            catch (Exception e)\r\n            {\r\n            }\r\n        }\r\n\r\n        /// <summary>\r\n        /// Sets up the map.\r\n        /// </summary>\r\n        /// <returns>A Task.</returns>\r\n        async Task SetupMap(Map map)\r\n        {\r\n            map.IsVisible = false;\r\n            // set to a default position\r\n            Position position;\r\n            try\r\n            {\r\n                position = await ViewModel.GetPosition();\r\n            }\r\n            catch (Exception ex)\r\n            {\r\n                ViewModel.DisplayGeocodingError();\r\n                return;\r\n            }\r\n            // if lat and lon are both 0, then it's assumed that position acquisition failed\r\n            if (position.Latitude == 0 && position.Longitude == 0)\r\n            {\r\n                ViewModel.DisplayGeocodingError();\r\n                return;\r\n            }\r\n            // Xamarin.Forms.Maps (2.3.107) currently has a bug that causes map pins to throw ExecutionEngineExceptions on UWP.\r\n            // Omitting pins on UWP for now.\r\n            if (true) //Device.OS != TargetPlatform.WinPhone && Device.OS != TargetPlatform.Windows)\r\n            {\r\n                var pin = new Pin()\r\n                {\r\n                    Type = PinType.Place,\r\n                    Position = position,\r\n                    Label = (ViewModel.SourceItem as IDisplayNameForSchema)?.DisplayName,\r\n                    Address = (ViewModel.SourceItem as IAddressForSchema)?.AddressString\r\n                };\r\n                map.Pins.Clear();\r\n                map.Pins.Add(pin);\r\n            }\r\n            map.MoveToRegion(MapSpan.FromCenterAndRadius(position, Distance.FromMiles(10)));\r\n            map.IsVisible = true;\r\n        }\r\n#endif"
+      },
+      "RegexOption": "Singleline",
+      "VerifySearchRegex": "false",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\Pages\\WasAppSectionNameListPage.xaml.cs",
+      "Regex": {
+        "^((?:(?!#if UWP|using).)*)(using)": "$1#if UWP\r\n#else\r\nusing Xamarin.Forms;\r\nusing Xamarin.Forms.Xaml;\r\nusing System;\r\nusing AppStudio.Xamarin;\r\nusing AppStudio.Xamarin.Services;\r\nusing DependencyObject = Xamarin.Forms.BindableObject;\r\nusing DependencyProperty = Xamarin.Forms.BindableProperty;\r\n#endif\r\n$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.ApplicationModel\\.DataTransfer;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Navigation;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml\\.Controls;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using Windows\\.UI\\.Xaml;)": "$1$3$2",
+        "(#if UWP)(.*#else.*#endif.*)(\r\n[ \t]*using AppStudio\\.Uwp;)": "$1$3$2",
+        "(Page[ \t]*:)[ \t]*(Page)": "$1\r\n#if UWP\r\n        $2\r\n#else\r\n        ContentPage\r\n#endif",
+        "([\\{\\}][\r\n \t]*)((\r\n[ \t]*public ListViewModel ViewModel )\\{ get;[a-z ]+set; \\})": "$1\r\n#if UWP$2\r\n#else$3=> BindingContext as ListViewModel;\r\n#endif",
+        "((?:#endif|\\})[\r\n \t]*)(\r\n[ \t]*private DataTransferManager _dataTransferManager;)": "$1\r\n#if UWP$2\r\n#endif",
+        "((?:#endif|\\})[\r\n \t]*)(\r\n[ \t]*public static readonly DependencyProperty HtmlContentProperty = DependencyProperty\\.Register\\(\"HtmlContent\", typeof\\(string\\), typeof\\(WasAppSectionNameListPage\\), new PropertyMetadata\\(string\\.Empty\\)\\);)": "$1\r\n#if UWP$2\r\n#else\r\n        public static readonly DependencyProperty HtmlContentProperty = DependencyPropertyHelper.Register(\"HtmlContent\", typeof(string), typeof(WasAppSectionNameListPage), string.Empty);\r\n#endif",
+        "(public WasAppSectionNameListPage\\(\\)([\r\n \t]*)\\{)([^\\}]*)(\r\n[ \t]*\\})": "$1\r\n#if UWP$3\r\n#else$2    BindingContext = ViewModelFactory.NewList(new WasAppSectionNameSection());$2    this.InitializeComponent();$2    // on Android, we use a floating action button, so clear the ToolBarItems collection$2    if (Device.OS == TargetPlatform.Android)$2    {$2        ToolbarItems.Remove(addAcquaintanceToolbarItem);$2        fab.Clicked = AndroidAddButtonClicked;$2    }$2    if (Device.OS != TargetPlatform.Windows)$2    {$2        ToolbarItems.Remove(refreshToolbarItem);$2    }\r\n#endif$4",
+        "((?:#endif|\\})[\r\n \t]*)(\r\n[ \t]*protected[a-z ]+void OnNavigatedTo\\(.*)(\r\n[ \t]*\\}[\r\n \t]*\\}[\r\n \t]*)": "$1\r\n#if UWP$2\r\n#else\r\n        /// <summary>\r\n        /// The action to take when a list item is tapped.\r\n        /// </summary>\r\n        /// <param name=\"sender\"> The sender.</param>\r\n        /// <param name=\"e\">The ItemTappedEventArgs</param>\r\n        void ItemTapped(object sender, ItemTappedEventArgs e)\r\n        {\r\n            //\tNavigation.PushAsync(new AcquaintanceDetailPage() { BindingContext = new NavParameter() {SelectedId = ((Contacts1Schema)e.Item)._id,Items=ViewModel.}});\r\n            ViewModel.ItemClickCommand.Execute(e.Item);\r\n            // prevents the list from displaying the navigated item as selected when navigating back to the list\r\n            ((ListView)sender).SelectedItem = null;\r\n        }\r\n        /// <summary>\r\n        /// The action to take when the + ToolbarItem is clicked on Android.\r\n        /// </summary>\r\n        /// <param name=\"sender\">The sender.</param>\r\n        /// <param name=\"e\">The EventArgs</param>\r\n        void AndroidAddButtonClicked(object sender, EventArgs e)\r\n        {\r\n            //Navigation.PushAsync(new AcquaintanceEditPage() { BindingContext = new AcquaintanceEditViewModel() });\r\n        }\r\n        protected override async void OnAppearing()\r\n        {\r\n            base.OnAppearing();\r\n            await ViewModel.ExecuteLoadAcquaintancesCommand();\r\n        }\r\n#endif$3"
+      },
+      "RegexOption": "Singleline",
+      "VerifySearchRegex": "false",
+      "ShowError": "false"
+    },
+    {
+      "Action": "Update",
+      "Name": "WasAppNamespace\\WasAppNamespace\\WasAppNamespace.csproj",
+      "Regex": {
+        "(</PropertyGroup>[\r\n \t]*<ItemGroup>)": "$1\r\n    <Compile Include=\"Sections\\WasAppSchemaNameSchema.cs\" />\r\n    <Compile Include=\"Collections\\WasAppSectionNameSection.cs\" />\r\n    <Compile Include=\"Collections\\WasAppSchemaNameSchemaParser.cs\" />\r\n    <Compile Include=\"Pages\\WasAppSectionNameDetailPage.xaml.cs\">\r\n      <DependentUpon>WasAppSectionNameDetailPage.xaml</DependentUpon>\r\n    </Compile>\r\n    <Compile Include=\"Pages\\WasAppSectionNameListPage.xaml.cs\">\r\n      <DependentUpon>WasAppSectionNameListPage.xaml</DependentUpon>\r\n    </Compile>",
+        // replaced by the wildcard * in the copied .csproj
+        //"(<ItemGroup>)([\r\n \t]*<EmbeddedResource Include=\"Assets)": "$1\r\n    <EmbeddedResource Include=\"Assets\\Data\\WasAppSectionName.json\"/>\r\n    <EmbeddedResource Include=\"Assets\\Data\\WasAppSectionName.htm\"/>$2",
+        "(<ItemGroup>)([\r\n \t]*<EmbeddedResource Include=\"Pages)": "$1\r\n    <EmbeddedResource Include=\"Pages\\WasAppSectionNameListPage.xaml\">\r\n      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>\r\n      <SubType>Designer</SubType>\r\n    </EmbeddedResource>\r\n    <EmbeddedResource Include=\"Pages\\WasAppSectionNameDetailPage.xaml\">\r\n      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>\r\n      <SubType>Designer</SubType>\r\n    </EmbeddedResource>$2"
+      }
+    }
+
+  ]
+}

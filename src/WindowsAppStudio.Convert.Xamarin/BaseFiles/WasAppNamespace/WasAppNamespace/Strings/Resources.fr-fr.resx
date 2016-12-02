@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    --><xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutButton.Label" xml:space="preserve">
+    <value>à propos de</value>
+  </data>
+  <data name="AboutFlyout.Title" xml:space="preserve">
+    <value>À propos de</value>
+  </data>
+  <data name="AboutSection.Text" xml:space="preserve">
+    <value>à propos de</value>
+  </data>
+  <data name="AboutSectionCapabilities.Text" xml:space="preserve">
+    <value>Fonctionnalités de l’application</value>
+  </data>
+  <data name="AboutSectionLicenses.Text" xml:space="preserve">
+    <value>Dependencies</value>
+  </data>
+  <data name="AboutSectionLicensesDescription.Text" xml:space="preserve">
+    <value>Cette application est développée à l’aide du logiciel open source suivant :</value>
+  </data>
+  <data name="AdvertisementSection.Header" xml:space="preserve">
+    <value>Publicité</value>
+  </data>
+  <data name="AppVersion.Text" xml:space="preserve">
+    <value>Version de l&apos;application :</value>
+  </data>
+  <data name="BigTextButton.Label" xml:space="preserve">
+    <value>texte volumineux</value>
+  </data>
+  <data name="DevelopedBy.Text" xml:space="preserve">
+    <value>Développée par :</value>
+  </data>
+  <data name="FullScreenButton.Label" xml:space="preserve">
+    <value>Plein écran</value>
+  </data>
+  <data name="LastUpdated.Text" xml:space="preserve">
+    <value>Dernière mise à jour</value>
+  </data>
+  <data name="ListErrorNotificationControl.ErrorText" xml:space="preserve">
+    <value>Une erreur inattendue s’est produite lors du chargement des données de la section. Veuillez réactualiser la page ultérieurement.</value>
+  </data>
+  <data name="LoadDataErrorMessage.Text" xml:space="preserve">
+    <value>Une erreur inattendue s’est produite lors du chargement des données de la section. Veuillez réactualiser la page ultérieurement.</value>
+  </data>
+  <data name="NoConnectionAvailable.Text" xml:space="preserve">
+    <value>Nous ne pouvons pas afficher la vidéo, car aucune connexion n’est disponible.</value>
+  </data>
+  <data name="NormalTextButton.Label" xml:space="preserve">
+    <value>texte normal</value>
+  </data>
+  <data name="PrivacyButton.Label" xml:space="preserve">
+    <value>confidentialité</value>
+  </data>
+  <data name="PrivacyFlyout.Title" xml:space="preserve">
+    <value>Confidentialité</value>
+  </data>
+  <data name="PrivacyTermsButton.Content" xml:space="preserve">
+    <value>Déclaration de confidentialité</value>
+  </data>
+  <data name="RefreshButton.Label" xml:space="preserve">
+    <value>actualiser</value>
+  </data>
+  <data name="ShareItemButton.Label" xml:space="preserve">
+    <value>partager</value>
+  </data>
+  <data name="SmallTextButton.Label" xml:space="preserve">
+    <value>petit texte</value>
+  </data>
+  <data name="SectionListItem.ErrorText" xml:space="preserve">
+    <value>Une erreur inattendue s’est produite lors du chargement des données de la section. Veuillez réactualiser la page ultérieurement.</value>
+  </data>
+  <data name="SectionListItem.HeaderLinkText" xml:space="preserve">
+    <value>Tout afficher</value>
+  </data>
+  <data name="ShowPresentationButton.Label" xml:space="preserve">
+    <value>Diaporama</value>
+  </data>
+  <data name="ShowInfoButton.Label" xml:space="preserve">
+    <value>Afficher les informations</value>
+  </data>
+  <data name="RefreshButton.AutomationPropertiesName" xml:space="preserve">
+    <value>Appuyez pour actualiser les données</value>
+  </data>
+  <data name="BigTextButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Appuyez pour définir un texte volumineux</value>
+  </data>
+  <data name="FullScreenButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Appuyez pour démarrer le mode plein écran</value>
+  </data>
+  <data name="NormalTextButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Appuyez pour définir un texte normal</value>
+  </data>
+  <data name="ShareItemButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Appuyez pour partager</value>
+  </data>
+  <data name="ShowInfoButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Appuyez pour afficher ou masquer les informations</value>
+  </data>
+  <data name="ShowPresentationButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Appuyez pour démarrer la présentation multimédia</value>
+  </data>
+  <data name="SmallTextButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Appuyez pour définir un petit texte</value>
+  </data>
+  <data name="NavigationPageButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Panneau de navigation de l’application</value>
+  </data>
+  <data name="NarrationSubTitle" xml:space="preserve">
+    <value>sous-titre</value>
+  </data>
+  <data name="NarrationTitle" xml:space="preserve">
+    <value>titre</value>
+  </data>
+  <data name="NavigationPaneAbout" xml:space="preserve">
+    <value>À propos de</value>
+  </data>
+  <data name="NavigationPanePrivacy" xml:space="preserve">
+    <value>Déclaration de confidentialité</value>
+  </data>
+  <data name="AboutAppStudioOpenSourceLibraries.Content" xml:space="preserve">
+    <value>Windows App Studio Libraries</value>
+  </data>
+  <data name="AboutCapabilityApplicationInsights.Text" xml:space="preserve">
+    <value>Application Insights</value>
+  </data>
+  <data name="AboutCapabilityInternet.Text" xml:space="preserve">
+    <value>Connexion Internet</value>
+  </data>
+  <data name="AboutCapabilityTileUpdater.Text" xml:space="preserve">
+    <value>Programme de mise à jour des vignettes</value>
+  </data>
+  <data name="LoadingRelatedContent" xml:space="preserve">
+    <value>Chargement...</value>
+  </data>
+  <data name="ThereIsNotRelatedContent" xml:space="preserve">
+    <value>Aucun contenu associé.</value>
+  </data>
+  <data name="SearchBox.PlaceholderText" xml:space="preserve">
+    <value>tapez le texte recherché...</value>
+  </data>
+  <data name="SearchResultTxt.Text" xml:space="preserve">
+    <value>Résultats de la recherche pour :</value>
+  </data>
+  <data name="SearchNoResultsTxt.Text" xml:space="preserve">
+    <value>Aucun résultat trouvé.</value>
+  </data>
+  <data name="RoamingWarning.Text" xml:space="preserve">
+    <value>L’itinérance n’est pas activée sur cet appareil. Les données stockées sur cet appareil ne seront pas répliquées sur le reste de vos appareils.</value>
+  </data>
+  <data name="NoFavoritesTxt.Text" xml:space="preserve">
+    <value>Aucun contenu trouvé. Naviguez dans l’application et ajoutez vos éléments ici en appuyant ou en cliquant sur l’icône.</value>
+  </data>
+  <data name="FavoriteButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Ajouter aux favoris/Supprimer des favoris</value>
+  </data>
+  <data name="FavoriteButton.Label" xml:space="preserve">
+    <value>Favori</value>
+  </data>
+  <data name="LoadMoreItemsButton.Label" xml:space="preserve">
+    <value>Load more items</value>
+  </data>
+  <data name="LoadMoreItemsButton.AutomationPropertiesName" xml:space="preserve">
+    <value>Press to load more items</value>
+  </data>
+  <data name="AboutViewMoreInformation.Content" xml:space="preserve">
+    <value>View more information</value>
+  </data>
+  <data name="AboutPoweredBy.Text" xml:space="preserve">
+    <value>Powered by</value>
+  </data>
+  <data name="LoadMoreButton.Content" xml:space="preserve">
+    <value>Load more</value>
+  </data>
+</root>

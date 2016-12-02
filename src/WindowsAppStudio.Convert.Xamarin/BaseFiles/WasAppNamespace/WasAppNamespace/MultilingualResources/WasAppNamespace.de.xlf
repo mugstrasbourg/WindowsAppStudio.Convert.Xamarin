@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="de" original="WasAppNamespace/APPSTUDIO/STRINGS/RESOURCES.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1795.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="WASAPPNAMESPACE/STRINGS/RESOURCES.RESX">
+        <trans-unit id="AboutButton.Label" translate="yes" xml:space="preserve">
+          <source>about</source>
+          <target state="new">about</target>
+        </trans-unit>
+        <trans-unit id="AboutFlyout.Title" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="new">About</target>
+        </trans-unit>
+        <trans-unit id="AboutSection.Text" translate="yes" xml:space="preserve">
+          <source>about</source>
+          <target state="new">about</target>
+        </trans-unit>
+        <trans-unit id="AboutSectionCapabilities.Text" translate="yes" xml:space="preserve">
+          <source>Application capabilities</source>
+          <target state="new">Application capabilities</target>
+        </trans-unit>
+        <trans-unit id="AboutSectionLicenses.Text" translate="yes" xml:space="preserve">
+          <source>Dependencies</source>
+          <target state="new">Dependencies</target>
+        </trans-unit>
+        <trans-unit id="AboutSectionLicensesDescription.Text" translate="yes" xml:space="preserve">
+          <source>This app is developed using following open source software:</source>
+          <target state="new">This app is developed using following open source software:</target>
+        </trans-unit>
+        <trans-unit id="AdvertisementSection.Header" translate="yes" xml:space="preserve">
+          <source>Advertisement</source>
+          <target state="new">Advertisement</target>
+        </trans-unit>
+        <trans-unit id="AppVersion.Text" translate="yes" xml:space="preserve">
+          <source>App version:</source>
+          <target state="new">App version:</target>
+        </trans-unit>
+        <trans-unit id="BigTextButton.Label" translate="yes" xml:space="preserve">
+          <source>big text</source>
+          <target state="new">big text</target>
+        </trans-unit>
+        <trans-unit id="DevelopedBy.Text" translate="yes" xml:space="preserve">
+          <source>Developed by:</source>
+          <target state="new">Developed by:</target>
+        </trans-unit>
+        <trans-unit id="FullScreenButton.Label" translate="yes" xml:space="preserve">
+          <source>Full Screen</source>
+          <target state="new">Full Screen</target>
+        </trans-unit>
+        <trans-unit id="LastUpdated.Text" translate="yes" xml:space="preserve">
+          <source>Last update</source>
+          <target state="new">Last update</target>
+        </trans-unit>
+        <trans-unit id="ListErrorNotificationControl.ErrorText" translate="yes" xml:space="preserve">
+          <source>There was an unexpected error loading the section data. Try to refresh later.</source>
+          <target state="new">There was an unexpected error loading the section data. Try to refresh later.</target>
+        </trans-unit>
+        <trans-unit id="LoadDataErrorMessage.Text" translate="yes" xml:space="preserve">
+          <source>There was an unexpected error loading the section data. Try to refresh later.</source>
+          <target state="new">There was an unexpected error loading the section data. Try to refresh later.</target>
+        </trans-unit>
+        <trans-unit id="NoConnectionAvailable.Text" translate="yes" xml:space="preserve">
+          <source>The video cannot be shown because there is no connection available.</source>
+          <target state="new">The video cannot be shown because there is no connection available.</target>
+        </trans-unit>
+        <trans-unit id="NormalTextButton.Label" translate="yes" xml:space="preserve">
+          <source>normal text</source>
+          <target state="new">normal text</target>
+        </trans-unit>
+        <trans-unit id="PrivacyButton.Label" translate="yes" xml:space="preserve">
+          <source>privacy</source>
+          <target state="new">privacy</target>
+        </trans-unit>
+        <trans-unit id="PrivacyFlyout.Title" translate="yes" xml:space="preserve">
+          <source>Privacy</source>
+          <target state="new">Privacy</target>
+        </trans-unit>
+        <trans-unit id="PrivacyTermsButton.Content" translate="yes" xml:space="preserve">
+          <source>Privacy terms</source>
+          <target state="new">Privacy terms</target>
+        </trans-unit>
+        <trans-unit id="RefreshButton.Label" translate="yes" xml:space="preserve">
+          <source>refresh</source>
+          <target state="new">refresh</target>
+        </trans-unit>
+        <trans-unit id="ShareItemButton.Label" translate="yes" xml:space="preserve">
+          <source>share</source>
+          <target state="new">share</target>
+        </trans-unit>
+        <trans-unit id="SmallTextButton.Label" translate="yes" xml:space="preserve">
+          <source>small text</source>
+          <target state="new">small text</target>
+        </trans-unit>
+        <trans-unit id="SectionListItem.ErrorText" translate="yes" xml:space="preserve">
+          <source>There was an unexpected error loading the section data. Try to refresh later.</source>
+          <target state="new">There was an unexpected error loading the section data. Try to refresh later.</target>
+        </trans-unit>
+        <trans-unit id="SectionListItem.HeaderLinkText" translate="yes" xml:space="preserve">
+          <source>View all</source>
+          <target state="new">View all</target>
+        </trans-unit>
+        <trans-unit id="ShowPresentationButton.Label" translate="yes" xml:space="preserve">
+          <source>Slide show</source>
+          <target state="new">Slide show</target>
+        </trans-unit>
+        <trans-unit id="ShowInfoButton.Label" translate="yes" xml:space="preserve">
+          <source>Show info</source>
+          <target state="new">Show info</target>
+        </trans-unit>
+        <trans-unit id="RefreshButton.AutomationPropertiesName" translate="yes" xml:space="preserve">
+          <source>Press to refresh the data</source>
+          <target state="new">Press to refresh the data</target>
+        </trans-unit>
+        <trans-unit id="BigTextButton.AutomationProperties.Name" translate="yes" xml:space="preserve">
+          <source>Press to set big size on text</source>
+          <target state="new">Press to set big size on text</target>
+        </trans-unit>
+        <trans-unit id="FullScreenButton.AutomationProperties.Name" translate="yes" xml:space="preserve">
+          <source>Press to start full screen mode</source>
+          <target state="new">Press to start full screen mode</target>
+        </trans-unit>
+        <trans-unit id="NormalTextButton.AutomationProperties.Name" translate="yes" xml:space="preserve">
+          <source>Press to set normal size on text</source>
+          <target state="new">Press to set normal size on text</target>
+        </trans-unit>
+        <trans-unit id="ShareItemButton.AutomationProperties.Name" translate="yes" xml:space="preserve">
+          <source>Press to share</source>
+          <target state="new">Press to share</target>
+        </trans-unit>
+        <trans-unit id="ShowInfoButton.AutomationProperties.Name" translate="yes" xml:space="preserve">
+          <source>Press to show or hide information</source>
+          <target state="new">Press to show or hide information</target>
+        </trans-unit>
+        <trans-unit id="ShowPresentationButton.AutomationProperties.Name" translate="yes" xml:space="preserve">
+          <source>Press to start media presentation</source>
+          <target state="new">Press to start media presentation</target>
+        </trans-unit>
+        <trans-unit id="SmallTextButton.AutomationProperties.Name" translate="yes" xml:space="preserve">
+          <source>Press to set small size on text</source>
+          <target state="new">Press to set small size on text</target>
+        </trans-unit>
+        <trans-unit id="NavigationPageButton.AutomationProperties.Name" translate="yes" xml:space="preserve">
+          <source>Application navigation panel</source>
+          <target state="new">Application navigation panel</target>
+        </trans-unit>
+        <trans-unit id="NarrationSubTitle" translate="yes" xml:space="preserve">
+          <source>subtitle</source>
+          <target state="new">subtitle</target>
+        </trans-unit>
+        <trans-unit id="NarrationTitle" translate="yes" xml:space="preserve">
+          <source>title</source>
+          <target state="new">title</target>
+        </trans-unit>
+        <trans-unit id="NavigationPaneAbout" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="new">About</target>
+        </trans-unit>
+        <trans-unit id="NavigationPanePrivacy" translate="yes" xml:space="preserve">
+          <source>Privacy terms</source>
+          <target state="new">Privacy terms</target>
+        </trans-unit>
+        <trans-unit id="AboutAppStudioOpenSourceLibraries.Content" translate="yes" xml:space="preserve">
+          <source>Windows App Studio Libraries</source>
+          <target state="new">Windows App Studio Libraries</target>
+        </trans-unit>
+        <trans-unit id="AboutCapabilityApplicationInsights.Text" translate="yes" xml:space="preserve">
+          <source>Application Insights</source>
+          <target state="new">Application Insights</target>
+        </trans-unit>
+        <trans-unit id="AboutCapabilityInternet.Text" translate="yes" xml:space="preserve">
+          <source>Internet connection</source>
+          <target state="new">Internet connection</target>
+        </trans-unit>
+        <trans-unit id="AboutCapabilityTileUpdater.Text" translate="yes" xml:space="preserve">
+          <source>Tile Updater</source>
+          <target state="new">Tile Updater</target>
+        </trans-unit>
+        <trans-unit id="LoadingRelatedContent" translate="yes" xml:space="preserve">
+          <source>Loading...</source>
+          <target state="new">Loading...</target>
+        </trans-unit>
+        <trans-unit id="ThereIsNotRelatedContent" translate="yes" xml:space="preserve">
+          <source>There is no related content.</source>
+          <target state="new">There is no related content.</target>
+        </trans-unit>
+        <trans-unit id="SearchBox.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>type search text...</source>
+          <target state="new">type search text...</target>
+        </trans-unit>
+        <trans-unit id="SearchResultTxt.Text" translate="yes" xml:space="preserve">
+          <source>Search results for:</source>
+          <target state="new">Search results for:</target>
+        </trans-unit>
+        <trans-unit id="SearchNoResultsTxt.Text" translate="yes" xml:space="preserve">
+          <source>No results found.</source>
+          <target state="new">No results found.</target>
+        </trans-unit>
+        <trans-unit id="RoamingWarning.Text" translate="yes" xml:space="preserve">
+          <source>Roaming is not enabled in this device. Data stored on this device will not be replicated in the rest of your devices.</source>
+          <target state="new">Roaming is not enabled in this device. Data stored on this device will not be replicated in the rest of your devices.</target>
+        </trans-unit>
+        <trans-unit id="NoFavoritesTxt.Text" translate="yes" xml:space="preserve">
+          <source>Looks that there is nothing here. Navigate through the application and add your items hear by tapping or clicking in the icon</source>
+          <target state="new">Looks that there is nothing here. Navigate through the application and add your items hear by tapping or clicking in the icon</target>
+        </trans-unit>
+        <trans-unit id="FavoriteButton.AutomationProperties.Name" translate="yes" xml:space="preserve">
+          <source>Add or remove to favorites</source>
+          <target state="new">Add or remove to favorites</target>
+        </trans-unit>
+        <trans-unit id="FavoriteButton.Label" translate="yes" xml:space="preserve">
+          <source>Favorite</source>
+          <target state="new">Favorite</target>
+        </trans-unit>
+        <trans-unit id="LoadMoreItemsButton.AutomationPropertiesName" translate="yes" xml:space="preserve">
+          <source>Press to load more items</source>
+          <target state="new">Press to load more items</target>
+        </trans-unit>
+        <trans-unit id="LoadMoreItemsButton.Label" translate="yes" xml:space="preserve">
+          <source>Load more items</source>
+          <target state="new">Load more items</target>
+        </trans-unit>
+        <trans-unit id="AboutViewMoreInformation.Content" translate="yes" xml:space="preserve">
+          <source>View more information</source>
+          <target state="new">View more information</target>
+        </trans-unit>
+        <trans-unit id="AboutPoweredBy.Text" translate="yes" xml:space="preserve">
+          <source>Powered by</source>
+          <target state="new">Powered by</target>
+        </trans-unit>
+        <trans-unit id="LoadMoreButton.Content" translate="yes" xml:space="preserve">
+          <source>Load more</source>
+          <target state="new">Load more</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,6 @@
+MainPackage=Z:\Projects\app-acquaint\WasAppNamespace\WasAppNamespace.UWP\bin\ARM\Release\WasAppNamespace.UWP_1.1.0.0_ARM.appx
+SymbolPackage=Z:\Projects\app-acquaint\WasAppNamespace\WasAppNamespace.UWP\AppPackages\WasAppNamespace.UWP_1.1.0.0_Test\WasAppNamespace.UWP_1.1.0.0_ARM.appxsym
+ResourcePack=Z:\Projects\app-acquaint\WasAppNamespace\WasAppNamespace.UWP\bin\ARM\Release\WasAppNamespace.UWP_1.1.0.0_scale-100.appx
+ResourcePack=Z:\Projects\app-acquaint\WasAppNamespace\WasAppNamespace.UWP\bin\ARM\Release\WasAppNamespace.UWP_1.1.0.0_scale-125.appx
+ResourcePack=Z:\Projects\app-acquaint\WasAppNamespace\WasAppNamespace.UWP\bin\ARM\Release\WasAppNamespace.UWP_1.1.0.0_scale-150.appx
+ResourcePack=Z:\Projects\app-acquaint\WasAppNamespace\WasAppNamespace.UWP\bin\ARM\Release\WasAppNamespace.UWP_1.1.0.0_scale-400.appx
