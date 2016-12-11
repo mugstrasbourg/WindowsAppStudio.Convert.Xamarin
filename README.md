@@ -6,7 +6,7 @@ This is the first version: the base works (the Xamarin projects are generated), 
 
 Notes:
 - I used the [Acquaint sample of Xamarin](https://github.com/xamarinhq/app-acquaint) as a basis of the Xamarin app.
-- the generated Xamarin projects are using the Nnuget package of the Github project "[mugstrasbourg/waslibs.Xamarin](https://github.com/mugstrasbourg/waslibs.Xamarin).
+- the generated Xamarin projects are using the Nuget package of the Github project [mugstrasbourg/waslibs.Xamarin](https://github.com/mugstrasbourg/waslibs.Xamarin).
 
 The Nuget package is here:
 ```
